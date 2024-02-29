@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client"
 import React from "react";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   return (
@@ -10,7 +12,21 @@ const HeroSection = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-blue-700">
             Hello I'm{" "}
           </span>
-          Raya Farhadi
+          <br/>
+          <TypeAnimation 
+            sequence={[
+              "Raya Farhadi",
+              1000,
+              "A Web Developer",
+              1000,
+              "A Mobile Developer",
+              1000
+            ]}
+            wrapper="span"
+            speed={50}
+            style={{fontsize: "2em", display: "inline-block"}}
+            repeat={Infinity}
+          />
         </h1>
         <p className="text-[#adb7be] mb-6 text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit
