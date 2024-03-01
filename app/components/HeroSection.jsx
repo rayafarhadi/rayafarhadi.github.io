@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client"
+"use client";
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
@@ -24,7 +24,6 @@ const HeroSection = () => {
             ]}
             wrapper="span"
             speed={50}
-            style={{fontsize: "2em", display: "inline-block"}}
             repeat={Infinity}
           />
         </h1>
@@ -33,7 +32,7 @@ const HeroSection = () => {
           turpis, porta in dignissim eu, blandit in velit.
         </p>
         <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-teal-300 to-blue-700 text-white">
-          Hire Me
+          Contact Me
         </button>
         <button className="px-1 py-1 w-full sm:w-fit rounded-full mt-3 sm:mt-0 bg-gradient-to-br from-teal-300 to-blue-700 text-white">
           <span className="px-5 py-2 block bg-[#121212] hover:bg-slate-800 rounded-full">Download Resume</span>
