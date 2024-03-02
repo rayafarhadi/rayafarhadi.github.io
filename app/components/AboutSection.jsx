@@ -56,7 +56,7 @@ const AboutSection = () => {
 
   return (
     <div className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 xl:gap-16 py-8 px-4 sm:py-16 xl:px-16 items-center">
+      <div className="md:grid md:grid-cols-2 md:grid-rows-2 gap-8 py-8 sm:py-16 items-center">
         <div className="px-1 py-1 w-full sm:w-fit rounded-md mt-3 sm:mt-0 bg-gradient-to-br theme-gradient">
           <Image
             className="rounded-md"
@@ -78,7 +78,9 @@ const AboutSection = () => {
             magna sit amet purus gravida quis blandit turpis cursus. Duis at
             consectetur lorem donec massa sapien.
           </p>
-          <div className="flex flex-row mt-8">
+        </div>
+        <div className="col-start-2 place-self-start flex flex-col items-start">
+          <div className="flex flex-row">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab == "skills"}
