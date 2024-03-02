@@ -3,8 +3,49 @@ import React, { useState, useTransition } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 
+const TAB_DATA = [
+  {
+    id: "skills",
+    content: (
+      <ul className="list-disc px-5">
+        <li>React.js</li>
+        <li>Express.js</li>
+        <li>Next.js</li>
+        <li>Javascript</li>
+        <li>TypeScript</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Java</li>
+        <li>Python</li>
+      </ul>
+    ),
+  },
+  {
+    id: "education",
+    content: (
+      <div>
+        <h2 className="font-semibold">University of Toronto</h2>
+        <p className="mt-2">
+          <span>Class of 2023</span>
+          <br />
+          Bachelor of Science - Computer Science
+        </p>
+      </div>
+    ),
+  },
+  {
+    id: "experience",
+    content: (
+      <ul>
+        <li>idk what to put here</li>
+        <li>maybe change to something else</li>
+      </ul>
+    ),
+  },
+];
+
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("education");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -56,6 +97,9 @@ const AboutSection = () => {
             >
               Experience
             </TabButton>
+          </div>
+          <div className="mt-8">
+            {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
       </div>
