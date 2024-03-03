@@ -79,7 +79,7 @@ const AboutSection = () => {
             consectetur lorem donec massa sapien.
           </p>
         </div>
-        <div className="col-start-2 place-self-start flex flex-col items-start">
+        <div className="mt-4 md:mt-0 col-start-2 place-self-start flex flex-col items-start">
           <div className="flex flex-row">
             <TabButton
               selectTab={() => handleTabChange("skills")}
