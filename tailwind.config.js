@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "background-primary":"#121212",
-        "text-secondary":"#8da9bd"
-      }
+        "background-primary": "#121212",
+        "background-secondary": "#181818",
+        "text-secondary": "#8da9bd",
+      },
     },
   },
   plugins: [],

@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -10,7 +9,7 @@ const HeroSection = () => {
       <div className="col-span-7 place-self-center text-center sm:text-left">
         <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r theme-gradient">
-            Hello I'm{" "}
+            Hello I&apos;m{" "}
           </span>
           <br />
           <div className="hidden sm:block">
@@ -58,7 +57,7 @@ const HeroSection = () => {
         </button>
       </div>
       <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-        <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative">
+        <div className="rounded-full bg-background-secondary w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative">
           <Image
             src="/images/hero-image.png"
             alt="hero image"
