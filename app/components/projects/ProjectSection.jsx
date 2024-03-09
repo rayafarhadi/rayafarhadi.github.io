@@ -53,7 +53,7 @@ const projectsData = [
 const ProjectSection = () => {
   return (
     <div className="text-white">
-      <h2 className="text-4xl font-bold mt-4 mb-12">My Projects</h2>
+      <h2 className="text-4xl font-bold mt-0 xl:mt-4 mb-12">My Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
         {projectsData.map((project) => (
           <ProjectCard

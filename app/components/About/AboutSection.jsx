@@ -45,7 +45,7 @@ const TAB_DATA = [
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("education");
+  const [tab, setTab] = useState("skills");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -56,7 +56,7 @@ const AboutSection = () => {
 
   return (
     <div className="text-white">
-      <div className="md:grid md:grid-cols-2 md:grid-rows-2 gap-8 py-8 sm:py-16 items-center">
+      <div className="md:grid md:grid-cols-2 md:grid-rows-2 gap-8 py-4 lg:py-8 xl:py-16 items-center">
         <div className="px-1 py-1 w-full sm:w-fit rounded-md mt-3 sm:mt-0 bg-gradient-to-br theme-gradient">
           <Image
             className="rounded-md"
@@ -68,7 +68,7 @@ const AboutSection = () => {
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-lg text-justify">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed
             augue lacus viverra vitae congue eu consequat. Feugiat in ante metus
@@ -100,7 +100,7 @@ const AboutSection = () => {
               Experience
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-4">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
