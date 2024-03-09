@@ -7,12 +7,31 @@ const ContactSection = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const onSubmit = () => {
-    console.log("Data", email, subject, message);
+  const onSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("/api", {
+        method: "POST",
+        body: JSON.stringify({
+          email,
+          subject,
+          message,
+        }),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
+    } catch (error) {
+      console.error("Err", err);
+    }
   };
 
   return (
-    <div id="contact" className="text-white grid grid-cols-1 sm:grid-cols-2 mt-4 py-8">
+    <div
+      id="contact"
+      className="text-white grid grid-cols-1 sm:grid-cols-2 mt-4 py-8"
+    >
       <div className="mb-4 sm:mb-0">
         <h5 className="text-xl font-bold my-2">Let&apos;s Connect</h5>
         <p className="text-text-secondary mb-2 max-w-md text-justify">

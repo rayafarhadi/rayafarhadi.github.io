@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
@@ -47,9 +48,11 @@ const HeroSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit
           turpis, porta in dignissim eu, blandit in velit.
         </p>
-        <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br theme-gradient text-white">
-          Contact Me
-        </button>
+        <Link href="#contact">
+          <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br theme-gradient text-white">
+            Contact Me
+          </button>
+        </Link>
         <button className="px-1 py-1 w-full sm:w-fit rounded-full mt-3 sm:mt-0 bg-gradient-to-br theme-gradient text-white">
           <span className="px-5 py-2 block bg-background-primary hover:bg-slate-800 rounded-full">
             Download Resume
