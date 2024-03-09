@@ -1,9 +1,18 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const ContactSection = () => {
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const onSubmit = () => {
+    console.log("Data", email, subject, message);
+  };
+
   return (
-    <div className="text-white grid grid-cols-1 sm:grid-cols-2 mt-4 py-8">
+    <div id="contact" className="text-white grid grid-cols-1 sm:grid-cols-2 mt-4 py-8">
       <div className="mb-4 sm:mb-0">
         <h5 className="text-xl font-bold my-2">Let&apos;s Connect</h5>
         <p className="text-text-secondary mb-2 max-w-md text-justify">
@@ -51,7 +60,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-      <form className="flex flex-col gap-4 pl-4">
+      <form className="flex flex-col gap-4 pl-4" onSubmit={onSubmit}>
         <div className="flex flex-col">
           <label
             htmlFor="emailInput"
@@ -62,6 +71,8 @@ const ContactSection = () => {
           <input
             type="email"
             id="emailInput"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
             placeholder="myname@example.com"
             className="bg-background-secondary border border-[#333333] placeholder-[#8191a3] text-gray-200 text-sm rounded-lg block w-full p-2.5"
@@ -77,6 +88,8 @@ const ContactSection = () => {
           <input
             type="text"
             id="subjectInput"
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
             required
             placeholder="Just saying hello!"
             className="bg-background-secondary border border-[#333333] placeholder-[#8191a3] text-gray-200 text-sm rounded-lg block w-full p-2.5"
@@ -91,6 +104,8 @@ const ContactSection = () => {
           </label>
           <textarea
             id="messageInput"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             required
             placeholder="Hello! My name is..."
             className="bg-background-secondary border border-[#333333] placeholder-[#8191a3] text-gray-200 text-sm rounded-lg block w-full p-2.5"

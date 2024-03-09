@@ -55,7 +55,7 @@ const AboutSection = () => {
   };
 
   return (
-    <div className="text-white">
+    <div id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 md:grid-rows-2 gap-8 py-4 lg:py-8 xl:py-16 items-center">
         <div className="px-1 py-1 w-full sm:w-fit rounded-md mt-3 sm:mt-0 bg-gradient-to-br theme-gradient">
           <Image
