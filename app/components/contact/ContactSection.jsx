@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const ContactSection = () => {
   return (
-    <div className="text-white grid grid-cols-2 mt-4 py-8">
-      <div>
+    <div className="text-white grid grid-cols-1 sm:grid-cols-2 mt-4 py-8">
+      <div className="mb-4 sm:mb-0">
         <h5 className="text-xl font-bold my-2">Let&apos;s Connect</h5>
         <p className="text-text-secondary mb-2 max-w-md">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -12,7 +12,7 @@ const ContactSection = () => {
           augue lacus viverra vitae congue eu consequat. Feugiat in ante metus
           dictum at tempor commodo.
         </p>
-        <div className="flex flex-row">
+        <div className="flex flex-row justify-evenly px-12 sm:justify-start">
           <div className="linkedin">
             <Link href="\">
               <svg
