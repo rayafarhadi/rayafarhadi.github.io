@@ -45,8 +45,7 @@ const HeroSection = () => {
           </div>
         </h1>
         <p className="text-text-secondary mb-6 text-base sm:text-large lg:text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam velit
-          turpis, porta in dignissim eu, blandit in velit.
+          Crafting digital experiences that captivate, innovate, and inspire.
         </p>
         <Link href="#contact">
           <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br theme-gradient text-white">
@@ -54,9 +53,13 @@ const HeroSection = () => {
           </button>
         </Link>
         <button className="px-1 py-1 w-full sm:w-fit rounded-full mt-3 sm:mt-0 bg-gradient-to-br theme-gradient text-white">
-          <span className="px-5 py-2 block bg-background-primary hover:bg-slate-800 rounded-full">
+          <Link
+            href="/documents/Raya-Farhadi-Resume.pdf"
+            target="_blank"
+            className="px-5 py-2 block bg-background-primary hover:bg-slate-800 rounded-full"
+          >
             Download Resume
-          </span>
+          </Link>
         </button>
       </div>
       <div className="col-span-5 place-self-center mt-4 lg:mt-0">

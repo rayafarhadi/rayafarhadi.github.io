@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import NavItem from "./NavItem";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
+import Image from "next/image";
 
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
@@ -28,7 +29,12 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-10 bg-background-primary bg-opacity-90">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link href={"/"} className="text-5xl text-white font-extrabold">
-          RF
+          <Image
+            src="/images/RF-Logo-Sans-Serif.png"
+            alt="Logo"
+            width={80}
+            height={80}
+          />
         </Link>
 
         <div className="hidden sm:block sm:w-auto">
