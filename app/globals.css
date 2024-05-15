@@ -2,7 +2,11 @@
 @tailwind components;
 
 .theme-gradient {
-  @apply  from-teal-300 to-blue-700 hover:from-teal-500 hover:to-blue-900;
+  @apply  from-teal-300 to-blue-700;
+}
+
+.theme-gradient-hover {
+  @apply hover:from-teal-500 hover:to-blue-900
 }
 
 @tailwind utilities;

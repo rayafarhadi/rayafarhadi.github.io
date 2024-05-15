@@ -56,7 +56,7 @@ const AboutSection = () => {
         <div className="px-1 py-1 w-full sm:w-fit row-span-2 rounded-md mt-3 sm:mt-0 bg-gradient-to-br theme-gradient">
           <Image
             className="rounded-md"
-            src="images/about-image.jpg"
+            src="/images/about-image.jpg"
             alt=""
             width={500}
             height={500}
