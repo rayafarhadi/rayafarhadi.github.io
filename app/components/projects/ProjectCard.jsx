@@ -145,11 +145,12 @@ const ProjectCard = ({
   previewUrl,
 }) => {
   let gitLink;
+  let previewLink;
   if (gitUrl === "/") {
     gitLink = <></>;
   } else {
     gitLink = (
-      <Link href={gitUrl} className="mr-2">
+      <Link href={gitUrl} target="_blank" className="mr-2">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
@@ -167,17 +168,45 @@ const ProjectCard = ({
       </Link>
     );
   }
+  if (previewUrl === "/") {
+    previewLink = <></>;
+  } else {
+    previewLink = (
+      <Link href={previewUrl} target="_blank">
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 173 114"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M171.814 53.8759C156.232 22.3808 123.743 0.5 86.28 0.5C48.8174 0.5 16.3277 22.3808 0.745937 53.8759C-0.248646 55.8651 -0.248646 58.1858 0.745937 59.8434C16.3277 91.3385 48.8174 113.219 86.28 113.219C123.743 113.219 156.232 91.3385 171.814 59.8434C172.809 57.8542 172.809 55.8651 171.814 53.8759ZM86.28 93.3277C66.0568 93.3277 49.812 77.0828 49.812 56.8597C49.812 36.6365 66.0568 20.3916 86.28 20.3916C106.503 20.3916 122.748 36.6365 122.748 56.8597C122.748 77.0828 106.503 93.3277 86.28 93.3277Z"
+            fill="white"
+          />
+          <path
+            d="M86.28 33.6527C73.3504 33.6527 63.0731 43.9301 63.0731 56.8597C63.0731 69.7892 73.3504 80.0666 86.28 80.0666C99.2096 80.0666 109.487 69.7892 109.487 56.8597C109.487 43.9301 99.2096 33.6527 86.28 33.6527Z"
+            fill="white"
+          />
+        </svg>
+      </Link>
+    );
+  }
 
   return (
     <div>
       <div
-        className="h-32 rounded-t-xl"
+        className="h-48 rounded-t-xl"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       ></div>
-      <div className="bg-background-secondary rounded-b-xl py-6 px-4 text-white">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-text-secondary mb-2">{description}</p>
-        <div className="flex flex-row justify-between">
+      <div className="flex flex-col justify-between bg-background-secondary rounded-b-xl lg:h-60 py-6 px-4 text-white">
+        <div>
+          <h5 className="text-xl font-semibold mb-2">{title}</h5>
+          <p className="text-text-secondary mb-2 lg:text-justify lg:pr-16">
+            {description}
+          </p>
+        </div>
+        <div className="flex flex-row bottom justify-between">
           <div className="flex flex-row gap-1">
             {techUsed.map((tech) => (
               <div className="text-white" key={tech.id}>
@@ -190,24 +219,7 @@ const ProjectCard = ({
           </div>
           <div className="flex flex-row">
             {gitLink}
-            <Link href={previewUrl}>
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 173 114"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M171.814 53.8759C156.232 22.3808 123.743 0.5 86.28 0.5C48.8174 0.5 16.3277 22.3808 0.745937 53.8759C-0.248646 55.8651 -0.248646 58.1858 0.745937 59.8434C16.3277 91.3385 48.8174 113.219 86.28 113.219C123.743 113.219 156.232 91.3385 171.814 59.8434C172.809 57.8542 172.809 55.8651 171.814 53.8759ZM86.28 93.3277C66.0568 93.3277 49.812 77.0828 49.812 56.8597C49.812 36.6365 66.0568 20.3916 86.28 20.3916C106.503 20.3916 122.748 36.6365 122.748 56.8597C122.748 77.0828 106.503 93.3277 86.28 93.3277Z"
-                  fill="white"
-                />
-                <path
-                  d="M86.28 33.6527C73.3504 33.6527 63.0731 43.9301 63.0731 56.8597C63.0731 69.7892 73.3504 80.0666 86.28 80.0666C99.2096 80.0666 109.487 69.7892 109.487 56.8597C109.487 43.9301 99.2096 33.6527 86.28 33.6527Z"
-                  fill="white"
-                />
-              </svg>
-            </Link>
+            {previewLink}
           </div>
         </div>
       </div>

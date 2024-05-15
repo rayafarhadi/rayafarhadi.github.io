@@ -7,7 +7,7 @@ import { TypeAnimation } from "react-type-animation";
 const HeroSection = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12">
-      <div className="col-span-7 place-self-center text-center sm:text-left">
+      <div className="col-span-7 place-self-center justify-self-start text-center sm:text-left">
         <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
           <span className="text-transparent bg-clip-text bg-gradient-to-r theme-gradient">
             Hello I&apos;m{" "}
@@ -24,6 +24,7 @@ const HeroSection = () => {
                 1000,
               ]}
               wrapper="span"
+              style={{ display: "inline-block",  }}
               speed={50}
               repeat={Infinity}
             />
@@ -45,7 +46,7 @@ const HeroSection = () => {
           </div>
         </h1>
         <p className="text-text-secondary mb-6 text-base sm:text-large lg:text-xl">
-          Crafting digital experiences that captivate, innovate, and inspire.
+          Create. Innovate. Enhance. Repeat.
         </p>
         <Link href="#contact">
           <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br theme-gradient text-white">
@@ -62,7 +63,7 @@ const HeroSection = () => {
           </Link>
         </button>
       </div>
-      <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+      {/* <div className="col-span-5 place-self-center justify-self-start mt-4 lg:mt-0">
         <div className="rounded-full bg-background-secondary w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] relative">
           <Image
             src="/images/hero-image.png"
@@ -72,7 +73,7 @@ const HeroSection = () => {
             height={300}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

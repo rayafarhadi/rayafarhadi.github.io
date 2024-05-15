@@ -34,15 +34,14 @@ const ContactSection = () => {
     >
       <div className="mb-4 sm:mb-0">
         <h5 className="text-xl font-bold my-2">Let&apos;s Connect</h5>
-        <p className="text-text-secondary mb-2 max-w-md text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed
-          augue lacus viverra vitae congue eu consequat. Feugiat in ante metus
-          dictum at tempor commodo.
+        <p className="text-text-secondary mb-2 max-w-md lg:text-justify">
+          I&apos;m currently looking for new opportunities, my inbox is always
+          open. Whether you have a question or just want to say hi, I&apos;ll
+          try my best to get back to you!
         </p>
         <div className="flex flex-row justify-evenly px-12 sm:px-0 sm:justify-start">
           <div className="linkedin">
-            <Link href="\">
+            <Link href="https://www.linkedin.com/in/rayafarhadi/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
@@ -60,7 +59,7 @@ const ContactSection = () => {
             </Link>
           </div>
           <div className="github">
-            <Link href="\">
+            <Link href="https://github.com/rayafarhadi/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"

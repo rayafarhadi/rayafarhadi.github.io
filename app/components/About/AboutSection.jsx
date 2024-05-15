@@ -64,13 +64,13 @@ const AboutSection = () => {
         </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-base lg:text-lg text-justify">
-            I am a full stack web developer driven by a passion for creating
-            interactive and responsive web applications. Proficine in
-            Javascript, React, Node.js, Express, HTML, CSS and Kotlin. I
-            continually seek growth and am always looking to expand my knowledge
-            and skill set. I am a team player and I am excited to contribute to
-            the creation of exceptional applications.
+          <p className="text-base lg:text-lg md:text-justify">
+            I am a full stack web developer driven by creating interactive and
+            responsive web applications. Proficient in Javascript, React,
+            Node.js, Express, HTML, CSS and Kotlin. I continually seek growth
+            and am always looking to expand my knowledge and skill set. I am a
+            team player and I am excited to contribute to the creation of
+            exceptional applications.
           </p>
         </div>
         <div className="mt-4 md:mt-0 col-start-2 place-self-start flex flex-col items-start">
