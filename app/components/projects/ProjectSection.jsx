@@ -20,7 +20,7 @@ const projectsData = [
     title: "Paeez Fine Foods Website",
     description:
       "Paeez is a persian grocery store that filled a niche in the market in an area that was lacking and asking for food and products from that part of the world. This site was created to be an entry point for new customers to discover the store and the rich culture that it provides.",
-    image: "/images/PaeezScreenshot.png",
+    image: "/images/PaeezScreenshot.PNG",
     tech: [
       { id: 1, name: "Wordpress" },
       { id: 2, name: "Javascript" },
@@ -34,7 +34,7 @@ const projectsData = [
     title: "Unleash Medicine Website",
     description:
       "Unleash Medicine was a non-profit that focused on helping aspiring medical students gain access to a field that has a daunting financial barrier to entry. (Unforunately, Unleash is no longer operating so this is just a preview of the former site) ",
-    image: "/images/UnleashScreenshot.png",
+    image: "/images/UnleashScreenshot.PNG",
     tech: [
       { id: 1, name: "Wix" },
       { id: 2, name: "Javascript" },
