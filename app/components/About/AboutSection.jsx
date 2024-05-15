@@ -68,9 +68,8 @@ const AboutSection = () => {
             I am a full stack web developer driven by creating interactive and
             responsive web applications. Proficient in Javascript, React,
             Node.js, Express, HTML, CSS and Kotlin. I continually seek growth
-            and am always looking to expand my knowledge and skill set. I am a
-            team player and I am excited to contribute to the creation of
-            exceptional applications.
+            and am always looking to expand my knowledge and skill set. I am
+            excited to contribute to the creation of exceptional applications.
           </p>
         </div>
         <div className="mt-4 md:mt-0 col-start-2 place-self-start flex flex-col items-start">
