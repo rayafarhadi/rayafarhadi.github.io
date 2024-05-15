@@ -46,7 +46,16 @@ const projectsData = [
 
 const WIPProjectData = [
   {
-   
+    id: 4,
+    title: "Golaso!",
+    description:
+      "A passion side project I am working on in my spare time. A soccer themed autobattler game. The game is not currently in a complete enough state to share as I am currently working on learning to use the Godot game engine effectively but if you are interested in the idea I will be posting the github here when it is in a state I am happy with. If you dont want to wait and want to chat about it feel free to send me a message!",
+    image: "/images/UnleashScreenshot.PNG",
+    tech: [
+      { id: 1, name: "Godot" },
+    ],
+    gitUrl: "/",
+    previewUrl: "/",
   },
 ];
 
@@ -67,7 +76,7 @@ const ProjectSection = () => {
           />
         ))}
       </div>
-      {/* <h2 className="text-4xl font-bold mt-12 mb-12">My Current WIP Project</h2>
+      <h2 className="text-4xl font-bold mt-12 mb-12">My Current WIP Project</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-8">
         {WIPProjectData.map((project) => (
           <ProjectCard
@@ -80,7 +89,7 @@ const ProjectSection = () => {
             previewUrl={project.previewUrl}
           />
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };
