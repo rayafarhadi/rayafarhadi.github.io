@@ -51,11 +51,19 @@ const WIPProjectData = [
     description:
       "A passion side project I am working on in my spare time. A soccer themed autobattler game. The game is not currently in a complete enough state to share as I am currently working on learning to use the Godot game engine effectively but if you are interested in the idea I will be posting the github here when it is in a state I am happy with. If you dont want to wait and want to chat about it feel free to send me a message!",
     image: "/images/soccer.jpg",
-    tech: [
-      { id: 1, name: "Godot" },
-    ],
+    tech: [{ id: 1, name: "Godot" }],
     gitUrl: "/",
     previewUrl: "/",
+  },
+  {
+    id: 5,
+    title: "Frog Incremental",
+    description:
+      "An incremental game I am working on as a fun way to practice building UI elements with React. Incremental games like this are very UI focused so I figured it would be a good way to practice UI design and development while also building a game.",
+    image: "/images/frog-pond.png",
+    tech: [{ id: 1, name: "NextJS" }],
+    gitUrl: "https://github.com/rayafarhadi/Frog-Incremental",
+    previewUrl: "https://rayafarhadi.github.io/Frog-Incremental/",
   },
 ];
 
